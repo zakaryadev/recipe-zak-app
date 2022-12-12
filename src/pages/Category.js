@@ -6,7 +6,7 @@ import BreadCrum from "../components/BreadCrum";
 
 export default function Category() {
   const { id } = useParams();
-  const [categoryItems = Array.prototype, setCategoryItems] = useState([]);
+  const [categoryItems, setCategoryItems] = useState([]);
   useEffect(() => {
     filterByCategory(id).then((data) => {
       setCategoryItems(data.meals);

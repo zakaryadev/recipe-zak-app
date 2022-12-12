@@ -4,7 +4,7 @@ import CardList from "../components/CardList";
 import { getAllCategories } from "../api";
 
 export default function Home() {
-  const [catalog = Array.prototype, setCatalog] = useState([]);
+  const [catalog, setCatalog] = useState([]);
   useEffect(() => {
     getAllCategories("Beef").then((data) => {
       setCatalog(data.categories);

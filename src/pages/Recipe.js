@@ -17,7 +17,6 @@ export default function Recipe() {
       setRecipe(data.meals[0]);
     });
   }, [id]);
-  console.log(recipe);
   return (
     <>
       <BreadCrum />
@@ -48,7 +47,7 @@ export default function Recipe() {
                 </thead>
                 <tbody>
                   {Object.keys(recipe).map((key) => {
-                    if (key.includes("Ingredient") && recipe[key] != "") {
+                    if (key.includes("Ingredient") && recipe[key]) {
                       return (
                         <tr key={key}>
                           <td>{recipe[key]}</td>
