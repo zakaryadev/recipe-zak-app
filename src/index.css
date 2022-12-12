@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.content {
+  min-height: calc(100vh - 112px);
+  padding: 1.5rem 0;
+}
+
+a {
+  text-decoration: none;
+}
+.card-bdy {
+  min-height: 180px;
+}
+
+.crd-bdy {
+  padding: 10px;
+  height: 120px !important;
+}
+
+.list { 
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 1rem;
+}
+
+.navbar {
+  position: sticky !important;
+}
