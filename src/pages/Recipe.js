@@ -48,13 +48,14 @@ export default function Recipe() {
                 <tbody>
                   {Object.keys(recipe).map((key) => {
                     if (key.includes("Ingredient") && recipe[key]) {
-                      return (
-                        <tr key={key}>
-                          <td>{recipe[key]}</td>
-                          <td>{recipe[`strMeasure${key.slice(13)}`]}</td>
-                        </tr>
-                      );
+                      return key;
                     }
+                    return (
+                      <tr key={key}>
+                        <td>{recipe[key]}</td>
+                        <td>{recipe[`strMeasure${key.slice(13)}`]}</td>
+                      </tr>
+                    );
                   })}
                 </tbody>
               </Table>
