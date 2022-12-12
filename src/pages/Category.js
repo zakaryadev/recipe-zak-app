@@ -14,11 +14,11 @@ export default function Category() {
   }, [id]);
 
   return (
-    <>
+    <div className="container-sm">
       <BreadCrum />
       <div className="text-black h1">
         {categoryItems.length > 0 && <CategoryList catalog={categoryItems} />}
       </div>
-    </>
+    </div>
   );
 }

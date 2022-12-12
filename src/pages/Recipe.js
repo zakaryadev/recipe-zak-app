@@ -18,11 +18,15 @@ export default function Recipe() {
     });
   }, [id]);
   return (
-    <>
+    <div className="container-sm">
       <BreadCrum />
       {recipe.idMeal > 0 ? (
-        <Card style={{ margin: "0 auto", width: "40rem" }}>
-          <Card.Img src={recipe.strMealThumb} alt={recipe.strMeal} />
+        <Card style={{ minWidth: "250px" }}>
+          <Card.Img
+            className="img-fluid"
+            src={recipe.strMealThumb}
+            alt={recipe.strMeal}
+          />
           <Card.Body>
             <Card.Title className="h1">{recipe.strMeal}</Card.Title>
             <h6>
@@ -64,6 +68,6 @@ export default function Recipe() {
       ) : (
         <Loader />
       )}
-    </>
+    </div>
   );
 }
