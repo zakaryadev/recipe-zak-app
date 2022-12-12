@@ -11,7 +11,7 @@ export default function Category() {
     filterByCategory(id).then((data) => {
       setCategoryItems(data.meals);
     });
-  }, []);
+  }, [id]);
 
   return (
     <>
