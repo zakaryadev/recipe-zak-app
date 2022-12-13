@@ -10,14 +10,11 @@ function Header() {
           React Food
         </Link>
         <Nav className="me-auto">
-          <Link className="nav-link" to="/search/a">
+          <Link className="nav-link" to="/search">
             Search
           </Link>
           <Link className="nav-link" to="/about">
             About
-          </Link>
-          <Link className="nav-link" to="/contact">
-            Contacts
           </Link>
         </Nav>
       </Container>
