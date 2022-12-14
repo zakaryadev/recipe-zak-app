@@ -18,7 +18,7 @@ function Search() {
         setMeals(data.meals);
       }
     );
-  }, [handleSearch]);
+  }, [search]);
 
   return (
     <div className="container-sm">
